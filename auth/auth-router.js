@@ -21,10 +21,13 @@ router.post("/login", (req, res) => {
     const user = users[0];
 
     if (user && bcrypt.compareSync(password, user.password)) {
-      req.session.cookie.username = user.username;
+      req.session.loggedIn = user.username;
       res
         .status(200)
-        .json({ message: "Logged in", cookie: req.session.cookie })
+        .json({
+          loggedIn: user.username,
+          cookie: req.session.cookie,
+        })
         .end();
     } else {
       res.status(401).json({ error: "You shall not pass!" }).end();
