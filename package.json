@@ -23,7 +23,7 @@
     "bcryptjs": "^2.4.3",
     "connect-session-knex": "^1.7.3",
     "express": "^4.17.1",
-    "express-session": "^1.17.1",
+    "express-session": "^1.17.2",
     "helmet": "^4.1.0",
     "knex": "^0.21.5",
     "sqlite3": "^5.0.0"
