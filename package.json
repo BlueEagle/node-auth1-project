@@ -21,11 +21,11 @@
   "homepage": "https://github.com/BlueEagle/node-auth1-project#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "connect-session-knex": "^1.7.3",
+    "connect-session-knex": "^3.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "helmet": "^4.1.0",
-    "knex": "^0.21.5",
+    "knex": "^2.4.0",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
